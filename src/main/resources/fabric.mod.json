@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "tntwars",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "TNT Wars",
+  "description": "A server-side Fabric mod for TNT Wars games",
   "authors": [
-    "Me!"
+    "Rodrigo Addor <me@rodrick.dev>"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/rodrigoaddor/tnt-wars",
+    "sources": "https://github.com/rodrigoaddor/tnt-wars"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/tntwars/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+    "server": [
+      "dev.rodrick.tntwars.TntWarsServer"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "tntwars.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.8.7",
@@ -31,7 +31,5 @@
     "fabric-language-kotlin": "*",
     "minecraft": "1.18.x"
   },
-  "suggests": {
-    "flamingo": "*"
-  }
+  "suggests": {}
 }
