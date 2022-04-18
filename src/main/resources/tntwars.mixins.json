@@ -2,11 +2,8 @@
   "required": true,
   "package": "dev.rodrick.tntwars.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "mixins": [],
+  "client": [],
   "server": [
     "TntWaterMovementMixin"
   ],
