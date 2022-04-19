@@ -2,6 +2,7 @@ package dev.rodrick.tntwars
 
 import dev.rodrick.tntwars.callbacks.TntDisarm
 import dev.rodrick.tntwars.commands.CraftingCommand
+import dev.rodrick.tntwars.commands.TntMovementCommand
 import net.fabricmc.api.DedicatedServerModInitializer
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback
 
@@ -15,6 +16,7 @@ class TntWarsServer : DedicatedServerModInitializer {
         CommandRegistrationCallback.EVENT.register(CommandRegistrationCallback { dispatcher, dedicated ->
             if (dedicated) {
                 CraftingCommand.register(dispatcher)
+                TntMovementCommand.register(dispatcher)
             }
         })
     }
